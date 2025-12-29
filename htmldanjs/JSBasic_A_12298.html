@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Basic - 12111</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="menu">
+      <li><a href="HtmlCssBasic_A_12298.html" onclick="return confirm('Apakah anda yakin ingin kembali ke Halaman Utama?')">Kembali ke Halaman Utama</a></li>
+      <li><a href="HtmlForm_A_12298.html" onclick="return confirm('Apakah anda yakin ingin kembali ke Halaman Utama?')">Halaman Form</a></li>
+      <!-- TODO: Pada bagian menu tambahkan Dialog box confirm ketika mengklik link tersebut. Clue : Gunakan OnClick dan return. -->
+  </ul>
+
+  <h2>Belajar JavaScript Fundamental</h2>
+
+  <div class="card">
+    <h3>Manipulasi Teks</h3>
+    <p id="teks">Teks ini bisa berubah!</p>
+    <button onclick="ubahBiru()">Ubah ke Biru</button>
+    <button onclick="ubahMerah()">Ubah ke Merah</button>
+    <button onclick="ubahHijau()">Ubah ke Hijau</button>
+  </div>
+
+  <div class="card">
+    <h3>Input Nama</h3>
+    <input type="text" id="inputNama" placeholder="Ketik namamu...">
+    <button onclick="tampilkanNama()">Tampilkan</button>
+    <p id="output"></p>
+  </div>
+
+  <div class="card">
+    <h3>Hitung Kuadrat</h3>
+    <input type="number" id="angka" placeholder="Masukkan angka...">
+    <button onclick="hitungKuadrat()">Hitung</button>
+    <p id="hasil"></p>
+  </div>
+
+  <script>
+     // TODO: Buat fungsi ubahBiru() untuk mengubah teks di elemen dengan id="teks" menjadi "Teks sudah berubah menjadi biru!" 
+     // dan warnanya menjadi biru.
+    function ubahBiru(){
+      const teks = document.getElementById("teks");
+      teks.innerText = "Teks sudah berubah menjadi biru!";
+      teks.style.color = "blue";
+    }
+    
+    // TODO: Buat fungsi ubahMerah() untuk mengubah teks di elemen dengan id="teks" menjadi "Sekarang teks berwarna merah!" 
+    // dan warnanya menjadi merah.
+    function ubahMerah(){
+      const teks = document.getElementById("teks");
+      teks.innerText = "Teks sudah berubah menjadi merah!";
+      teks.style.color = "red";
+    }
+    
+    // TODO: Buat fungsi ubahHijau() untuk mengubah teks di elemen dengan id="teks" menjadi "Sekarang teks berwarna hijau!" 
+    // dan warnanya menjadi hijau.
+    function ubahHijau(){
+      const teks = document.getElementById("teks");
+      teks.innerText = "Teks sudah berubah menjadi hijau!";
+      teks.style.color = "green";
+    }
+
+    // Clue ketiga function diatas : gunakan document.getElementById, paragraf.innerHTML, dan paragraf.style.color
+    
+    
+    // TODO: Buat fungsi tampilkanNama() yang mengambil nilai dari input dengan id="inputNama". 
+    // Jika kosong, tampilkan alert "Silakan isi nama dulu." 
+    // Jika ada isinya, tampilkan alert "Halo, [nama]! Selamat Belajar HTML & JS :D".
+    // Clue : gunakan document.getElementById("inputNama").value dan gunakan statement if else.
+
+    function tampilkanNama(){
+      const nama = document.getElementById("inputNama").value;
+      if (nama === "") {
+        alert("Silakan isi nama dulu.");
+      } else {
+        alert("Halo, " + nama + "! Selamat Belajar HTML & JS :D");
+      }
+    }
+    
+    // TODO: Buat fungsi hitungKuadrat() yang mengambil nilai dari input dengan id="angka". 
+    // Jika kosong, tampilkan pesan "Masukkan angka terlebih dahulu." di elemen dengan id="hasil". 
+    // Jika ada isinya, hitung kuadrat angka tersebut dan tampilkan "Hasil kuadrat dari [angka] adalah [hasil]" 
+    // di elemen dengan id="hasil".
+    // Clue : gunakan document.getElementById("angka").value dan gunakan hasil.innerHTML.
+    function hitungKuadrat(){
+      const angka = document.getElementById("angka").value;
+      const hasil = document.getElementById("hasil");
+
+      if (angka === "") {
+        hasil.innerHTML = "Masukkan angka terlebih dahulu.";
+      } else {
+        const kuadrat = angka * angka;
+        hasil.innerHTML = "Hasil kuadrat dari " + angka + " adalah " + kuadrat;
+      }
+    }
+  </script>
+</body>
+</html>
