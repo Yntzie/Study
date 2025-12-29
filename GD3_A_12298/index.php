@@ -9,9 +9,9 @@ $detail = [
 ];
 
 $gambar = [
-  "./PAW4_PHP_Assets/images/padel1.jpg",
-  "./PAW4_PHP_Assets/images/padel2.jpg",
-  "./PAW4_PHP_Assets/images/padel3.jpg"
+  "./assets/images/padel1.jpg",
+  "./assets/images/padel2.jpg",
+  "./assets/images/padel3.jpg"
 ];
 
 ?>
@@ -24,13 +24,13 @@ $gambar = [
 
   <link rel="icon" href="<?php $detail['logo'] ?>" type="image/x-icon">
 
-  <link rel="stylesheet" href="./PAW4_PHP_Assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="./PAW4_PHP_Assets/css/poppins.min.css" rel="stylesheet">
+  <link href="./assets/css/poppins.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="./PAW4_PHP_Assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
   <header class="fixed-top" id="navbar">
@@ -103,7 +103,7 @@ $gambar = [
                 </div>
                 <div class="col-md-5">
                     <img
-                        src="./PAW4_PHP_Assets/images/featurette-padel1.webp"
+                        src="./assets/images/featurette-padel1.webp"
                         class="featurette-image img-fluid mx-auto rounded shadow"
                         role="img"
                         aria-label="Gambar featurette 1"
@@ -126,7 +126,7 @@ $gambar = [
                 </div>
                 <div class="col-md-5 order-md-1">
                     <img
-                        src="./PAW4_PHP_Assets/images/featurette-padel2.jpeg"
+                        src="./assets/images/featurette-padel2.jpeg"
                         class="featurette-image img-fluid mx-auto rounded shadow"
                         role="img"
                         aria-label="Gambar featurette 2"
@@ -147,9 +147,9 @@ $gambar = [
     </main>
 
     <!-- Bootstrap 5.3 JS -->
-    <script src="./PAW4_PHP_Assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 
     <!-- Custom JS untuk Navbar -->
-    <script src="./PAW4_PHP_Assets/js/home-nav.js"></script>
+    <script src="./assets/js/home-nav.js"></script>
 </body>
 </html>

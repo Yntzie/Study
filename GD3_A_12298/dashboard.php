@@ -17,7 +17,7 @@ $detail = [
     "name" => "Atma Verde",
     "tagline" => "Padel Court",
     "page_title" => "Atma Verde Padel Court",
-    "logo" => "./PAW4_PHP_Assets/images/padel.png"
+    "logo" => "./assets/images/padel.png"
 ];
 ?>
 
@@ -30,13 +30,13 @@ $detail = [
 
     <link rel="icon" href="<?php echo $detail["logo"]; ?>" type="image/x-icon" />
 
-    <link rel="stylesheet" href="./PAW4_PHP_Assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="./PAW4_PHP_Assets/css/poppins.min.css" rel="stylesheet">
+    <link href="./assets/css/poppins.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./PAW4_PHP_Assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <style>
         .img-bukti-ngantor {
@@ -137,6 +137,6 @@ $detail = [
         </div>
     </main>
 
-    <script src="./PAW4_PHP_/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 </html>

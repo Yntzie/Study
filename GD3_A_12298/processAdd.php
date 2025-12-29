@@ -2,9 +2,9 @@
 session_start();
 
 $tipeFoto = [
-    "Standard" => "./PAW4_PHP_Assets/images/standard.jpg",
-    "Premium" => "./PAW4_PHP_Assets/images/premium.jpg",
-    "Scenic" => "./PAW4_PHP_Assets/images/scenic.jpg",
+    "Standard" => "./assets/images/standard.jpg",
+    "Premium" => "./assets/images/premium.jpg",
+    "Scenic" => "./assets/images/scenic.jpg",
 ];
 
 

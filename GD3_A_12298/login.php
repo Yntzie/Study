@@ -10,7 +10,7 @@ $detail = [
   "name" => "Atma Verda",
   "tagline" => "Padel Court",
   "page_title" => "Atma Verda Padel Court",
-  "logo" => "./PAW4_PHP_Assets/images/padel.png"
+  "logo" => "./assets/images/padel.png"
 ];
 
 ?>
@@ -21,13 +21,13 @@ $detail = [
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  $detail['page_title'] ?></title>
 
-  <link rel="stylesheet" href="./PAW4_PHP_Assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="./PAW4_PHP_Assets/css/poppins.min.css" rel="stylesheet">
+  <link href="./assets/css/poppins.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="./PAW4_PHP_Assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 
   <style>
     #formAuth{
